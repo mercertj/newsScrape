@@ -17,10 +17,9 @@
     "url": "https://github.com/mercertj/newsScrape/issues"
   },
   "homepage": "https://github.com/mercertj/newsScrape#readme",
-  "dependencies": {
-    "forever": "^0.15.3"
-  },
- 
+  
+  "devDependencies": {},
+
    "dependencies": {
     "body-parser": "^1.15.0",
     "cheerio": "^0.20.0",
@@ -28,5 +27,5 @@
     "express-handlebars": "^3.0.0",
     "mongoose": "^4.4.6",
     "morgan": "^1.7.0",
-    "request": "^2.69.0"
+    "request": "^2.69.0"  
   }
