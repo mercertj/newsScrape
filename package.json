@@ -4,7 +4,8 @@
   "description": "News Scrape",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,15 @@
   "homepage": "https://github.com/mercertj/newsScrape#readme",
   "dependencies": {
     "forever": "^0.15.3"
+  },
+  "devDependencies": {},
+
+   "dependencies": {
+    "body-parser": "^1.15.0",
+    "cheerio": "^0.20.0",
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.4.6",
+    "morgan": "^1.7.0",
+    "request": "^2.69.0"
   }
-}
