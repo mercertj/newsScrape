@@ -48,11 +48,12 @@ app.get("/scrape", function(req, res) {
     request("http://www.cnn.com/", function(error, response, html) {
         // Then, we load that into cheerio and save it to $ for a shorthand selector
         var $ = cheerio.load(html);
+        var result = [];
         // Now, we grab every h2 within an article tag, and do the following:
         $(".cd.cd--card").each(function(i, element) {
 
-            // Save an empty result object
-            var result = {};
+            // Save an empty result array
+            
 
             // Add the text and href of every link, and save them as properties of the result object
             result.title = $(this).children("a .cd__headline-text").text();
@@ -97,26 +98,18 @@ app.get("/articles/:id", function(req, res) {
 //     var newNote = new Note(req.body) {
 //         if (error) {
 //             console.log(error);
-//         }
+        
 //     } else {
 //         Article.findOneAndUpdate({ "_id": req.params.id }, { "note": doc._id }, function(err, doc) { 
 //         })
 //     }
-
-//     // TODO
-//     // ====
-
-//     // save the new note that gets posted to the Notes collection
-
-//     // then find an article from the req.params.id
-
-//     // and update its "note" property with the _id of the new note
-
-
+// }
+    
 // });
 
 
 // Listen on port 3000
-app.listen(3000, function() {
-    console.log("App running on port 3000!");
+let PORT = process.env.PORT || 5000;
+app.listen(PORT, function() {
+    console.log("App running on port " + PORT + " !");
 });

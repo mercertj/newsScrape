@@ -8,7 +8,7 @@ $.getJSON("/articles", function(data) {
 });
 
 
-// Whenever someone clicks a p tag
+// start scraping
 $(document).on("click", "p", function() {
   // Empty the notes from the note section
   $("#notes").empty();
