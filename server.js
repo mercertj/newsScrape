@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 // Database configuration with mongoose
-mongoose.connect("mongodb://localhost/newsScrape");
+mongoose.connect("mongodb://heroku_z2984kl6:js3fcfct0lib9vdgvrsa411v4n@ds023463.mlab.com:23463/heroku_z2984kl6");
 var db = mongoose.connection;
 
 // Show any mongoose errors
